@@ -165,7 +165,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: 25%;
+        width: 270px;
         height: 100vh;
         padding: 50px 18px;
         background-color: white;
@@ -221,6 +221,11 @@
     .mobile_header i{
         width: 26px;
     }
+    .header_section .sign_up {
+        margin-left: 0;
+        left: 0;
+        position: relative;
+    }
     .header_section #box  .login{
         position: absolute;
         top: 14px;
@@ -253,3 +258,4 @@
         margin-top: 3px;
     }
 }
+
