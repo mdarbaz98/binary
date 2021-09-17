@@ -1,0 +1,255 @@
+.mobile_header{
+    display: none;
+}
+
+.header_section{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    justify-content: space-between;
+    color: #191919;
+    padding: 12px 25px 0px 25px;
+    border-bottom: solid 1px #ebebeb;
+    background-color: white;
+    box-shadow: 10px 0px 2px rgb(204, 204, 204);
+    z-index: 99;
+}
+
+.header_section  a{
+    text-decoration: none;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+}
+
+.header_section #box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_section ul .logo{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.header_section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 6px;
+}
+
+.header_section ul li{
+    list-style: none;
+    padding-right: 30px;
+}
+
+.header_section ul li:nth-child(4){
+    padding-right: 0px;
+}
+
+.header_section .header_search{
+    display: flex;
+    padding: 0px 100px;
+    position: relative;
+    width: 400px;
+}
+
+.header_section .header_search .des_search{
+    position: absolute;
+    padding: 0px 110px;
+    left: 0;
+    top: 8px;
+    color: #a5a5a5;
+}
+
+.header_section .header_search input{
+    width: 400px;
+    height: 32px;
+    border-radius: 50px;
+    border: solid 1px #ebebeb;
+}
+
+.header_section .header_search input::placeholder{
+    font-size: 16px;
+    padding: 35px;
+    font-weight: 400;
+    color: #a5a5a5;
+}
+
+.header_section button{
+    margin-left: 10px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.header_section button a{
+    font-weight: 500;
+    font-size: 15px !important;
+}
+
+.header_section .login{
+    background: none;
+    border: solid 1px #ebebeb;
+    position: absolute;
+    right: 215px;
+}
+
+.header_section .sign_up{
+    background-color: #245efc;
+    position: absolute;
+    right: 115px;
+}
+
+.header_section .sign_up a{
+    color: white;
+}
+
+.header_section button a{
+    font-size: 18px;
+}
+
+.header_section .adobe{
+    position: absolute;
+    width: 100px;
+    height: 56px;
+    padding: 20px;
+    bottom: 4px;
+    right: 5px;
+
+}
+
+.header_section .adobe img{
+    width: 100%;
+}
+
+.download_section,.fa-times,#bur,label,.drp_down{
+    display: none;
+}
+
+
+/* media Queries ******************** */
+
+@media screen and (max-width:1080px) {
+    .mobile_header,label{
+        display: block;
+    }
+    .header_section{
+        padding: 16px;
+        position: fixed;
+    }
+    /* open and close section  ****************8*/
+
+    #bur:checked ~ #box{
+        left: 0%;
+    }
+
+    .cl{
+        opacity: 0;
+    }
+
+
+    .header_section #box .header_search,.header_section .adobe,.header_section .logo{
+        display: none;
+    }
+    .header_section #box{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 25%;
+        height: 100vh;
+        padding: 50px 18px;
+        background-color: white;
+        display: block;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    .download_section{
+        display: block;
+    }
+    .fa-times{
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        font-size: 18px;
+        z-index: 9;
+    }
+    .header_section #box ul{
+        display: block;
+    }
+    .header_section #box ul li{
+        margin-bottom: 30px;
+    }
+    .header_section #box .apple_store{
+        width: 133px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    .header_section #box .play_store{
+        width: 135px;
+        height: 40px;
+    }
+    .header_section #box  img{
+        width: 100%;
+        height: 100%;
+    }
+    .header_section #box .drp_down{
+        display: block;
+        padding: 30px 0px 38px;
+    }
+    .header_section #box .drp_down a{
+        font-size: 12px;
+    }
+
+    .header_section .sign_up{
+        margin-left: 0px;
+    }
+
+    .mobile_header i{
+        width: 26px;
+    }
+    .header_section #box  .login{
+        position: absolute;
+        top: 14px;
+        right: 20px;
+    }
+    .mobile_header img{
+        width: 24px;
+        height: 24px;
+        position: relative;
+        bottom: 3px;
+        left: 5px;
+    }
+    .mobile_header .use_app{
+        position: absolute;
+        right: 60px;
+        top: 11px;
+        padding: 5px 20px;
+        background-color: #245efc;
+        color: white;
+        font-size:16px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .mobile_header .fa-search{
+        position: absolute;
+        right: 10px;
+        margin-top: 3px;
+    }
+}

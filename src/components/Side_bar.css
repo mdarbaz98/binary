@@ -1,0 +1,106 @@
+.side_bar{
+    position: fixed;
+    top: 140px;
+    right: 70px;
+}
+
+.side_bar .menus, .side_bar .fl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_bar .items{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+
+.side_bar .follow .items img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.side_bar .menus .plus{
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    border: none;
+    height: 15px;
+    width: 15px;
+    font-size: 8px;
+    color: white;
+    background: #245efc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_bar .menus .items .plus i{
+    font-size: 10px;
+    color: white;
+}
+
+.side_bar p{
+    margin: 8px 0px 25px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a5a5a5;
+}
+
+.side_bar .menus .tools{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 11px;
+    border: solid 1px #e4e4e4;
+}
+
+.side_bar .like,.side_bar .file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #e4e4e4;
+}
+
+.side_bar .like{
+    background-color: #245efc;
+}
+
+.side_bar .like i{
+    color: white;
+}
+
+
+/* media queries **************************88 */
+
+@media screen and (max-width: 1080px) {
+    .side_bar{
+        right: 35px;
+        top:140px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .side_bar .hide,.side_bar p{
+        display: none;
+    }
+    .side_bar .like{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
