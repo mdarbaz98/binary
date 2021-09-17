@@ -570,7 +570,7 @@
 
 @media screen and (max-width: 1024px) {
     .col-md-12{
-        padding: 0px 0px 80px;
+        padding: 0px 0px 30px;
     }
     .col-md-12 .middle_section{
         border: none;
@@ -642,7 +642,7 @@
     }
     .col-md-12 .middle_section .two_section{
         display: block;
-        padding: 20px 20px 75px;
+        padding: 20px 20px 50px;
     }
     .col-md-12 .middle_section .bottom_section .left_side{
         margin-bottom: 20px;
